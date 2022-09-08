@@ -18,7 +18,7 @@
     
 
     <h2>WGS84 Projection</h2>
-    <h3>This projection is widely used as the standard for GPS. Although it nearly perfect at the equator,
+    <h3>This projection is widely used as the standard for GPS. Although it is nearly perfect at the equator,
         there is major area, distance, and shape distortion occurs at the poles. 
     </h3>
     <a href=".//maps/4326.png">
@@ -47,10 +47,73 @@
     <img src="/hw3-3857.png" alt="Pseudo-Mercator" width='500px'>
     </a>
 
+    <h2>Winkel Projection: ESRI-53018</h2>
+    <h3>This Azimuthal projection noticeably distorts distances, area, and 
+        size at the poles. At higher latitudes, landmasses are closer together, 
+        longer, and bigger than they should be. However, this projection has 
+        much less distortion of the poles than Mercator or Pseudo-Mercator projections. 
 
-    <h2 style="color:red">Now, you should <u>add the following projections on your own:</u></h2>
-    <h3>EPSG: 3857, 53018, 54034, 54027, 102016, and two additional projections that you choose.</h3>
-    <p></p>
+    </h3>
+    <a href="/hw3-53018.png">
+    <img src="/hw3-53018.png" alt="Winkel" width='500px'>
+    </a>
+
+    <h2>Cylindrical Equal Area Projection: ESRI-54034
+    </h2>
+    <h3>This projection preserves the relative area of polygons (oceans, 
+        continents, islands, etc.) but it does so at great cost to the shape 
+        of these features. The Northern Hemisphere in particular looks very squashed. 
+    </h3>
+    <a href="/hw3-54034.png">
+    <img src="/hw3-54034.png" alt="Cylindrical Equal Area" width='500px'>
+    </a>
+
+
+    <h2>Equidistant Conic Projection: ESRI-54027
+    </h2>
+    <h3> In this projection, which has a view above the North Pole, distance 
+        is accurate anywhere on the map. The least distortion is near the center, 
+        but the most southern regions of the map suffer from extreme area and 
+        shape distortion. Additionally, the projection’s design greatly 
+        enlarges the Pacific Ocean on first glance.
+    </h3>
+    <a href="/hw3-54027.png">
+    <img src="/hw3-54027.png" alt="Equidistant Conic" width='500px'>
+    </a>
+
+
+    <h2>Azimuthal Equidistant Projection: ESRI-102016</h2>
+    <h3>Similar to the above conic projection, this projection is a highly accurate 
+        portrait of distance. However it has slightly more dramatic area and 
+        shape distortion at the map's periphery. It is famously seen on the UN logo. 
+    </h3>
+    <a href="/hw3-102016.png">
+    <img src="/hw3-102016.png" alt="Azimuthal" width='500px'>
+    </a>
+
+
+    <h2>US Atlas Equal Area Projection: EPSG-2163
+    </h2>
+    <h3> This projection is specifically intended to retain the exact area of the United States, 
+        but for the most part it also limits area and shape distortion in nearby areas such as South 
+        America and the North Pole. The visible areas furthest from America, such as South Asia and Antarctica are substantially distorted in shape and size enough for this map to be inappropriate to use in a global view. 
+    </h3>
+    <a href="/hw3-2163.png">
+    <img src="/hw3-2163.png" alt="US Equal Area" width='500px'>
+    </a>
+
+
+    <h2>Robinson Projection: ESRI-54030
+    </h2>
+    <h3> The Robinson Projection is one of the strongest projections for displaying 
+        the whole world, because although direction, distance, shape, and size are distorted at high latitude, such changes are minimal.
+    </h3>
+    <a href="/hw3-54030.png">
+    <img src="/hw3-54030.png" alt="Robinson" width='500px'>
+    </a>
+
+
+    
     <h2>Data used for this project</h2>
     <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector </a>
 </body>
